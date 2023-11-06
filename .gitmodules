@@ -1,0 +1,3 @@
+[submodule "decNumber"]
+	path = decNumber
+	url = https://github.com/nirvanaos/decNumber.git
