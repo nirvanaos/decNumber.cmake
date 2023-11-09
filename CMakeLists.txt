@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(decNumber C)
+project(decNumber VERSION 3.68 LANGUAGES C)
+cmake_policy(SET CMP0010 NEW)
+set(CMAKE_CONFIGURATION_TYPES Debug Release)
 
 add_library(decNumber
     decNumber/decContext.c
