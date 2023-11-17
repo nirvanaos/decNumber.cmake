@@ -13,7 +13,7 @@ add_library(decNumber
 
 target_compile_definitions(decNumber
     PUBLIC DECNUMDIGITS=62
-    PRIVATE DECPRINT=0 DDECLITEND=1 _CRT_SECURE_NO_WARNINGS)
+    PRIVATE DECPRINT=0 DECLITEND=1 _CRT_SECURE_NO_WARNINGS)
 
 set_property(TARGET decNumber PROPERTY
     MSVC_DEBUG_INFORMATION_FORMAT "$<$<CONFIG:Debug,RelWithDebInfo>:Embedded>")
