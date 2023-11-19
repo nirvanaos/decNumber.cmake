@@ -17,7 +17,3 @@ target_compile_definitions(decNumber
 
 set_property(TARGET decNumber PROPERTY
     MSVC_DEBUG_INFORMATION_FORMAT "$<$<CONFIG:Debug,RelWithDebInfo>:Embedded>")
-
-target_include_directories(decNumber PUBLIC decNumber)
-
-#install(TARGETS decNumber)
