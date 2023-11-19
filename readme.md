@@ -1,5 +1,5 @@
 # decNumber.cmake
-The supermodule for build decNumber library with CMake.
+The supermodule for build decNumber library with CMake or Meson.
 
 The part of Nirvana project.
 
