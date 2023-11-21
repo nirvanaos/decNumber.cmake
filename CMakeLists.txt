@@ -11,9 +11,11 @@ add_library(decNumber
     decNumber/decQuad.c
     decNumber/decSingle.c)
 
-target_compile_definitions(decNumber
-    PUBLIC DECNUMDIGITS=62
-    PRIVATE DECPRINT=0 DECLITEND=1 _CRT_SECURE_NO_WARNINGS)
+target_compile_definitions(decNumber PRIVATE
+    DECNUMDIGITS=62
+    DECPRINT=0
+    DECLITEND=1
+    _CRT_SECURE_NO_WARNINGS)
 
 set_property(TARGET decNumber PROPERTY
     MSVC_DEBUG_INFORMATION_FORMAT "$<$<CONFIG:Debug,RelWithDebInfo>:Embedded>")
