@@ -16,15 +16,16 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         build_type: [Debug, Release]
-        include:
+        preset: [win-x64, win-x86, gc, clang]
+        exclude:
           - preset: win-x64
-            os: windows-latest
+            os: ubuntu-latest
           - preset: win-x86
-            os: windows-latest
+            os: ubuntu-latest
           - preset: gc
-            os: ubuntu-latest
+            os: windows-latest
           - preset: clang
-            os: ubuntu-latest
+            os: windows-latest
 
     steps:
     - uses: actions/checkout@v4
