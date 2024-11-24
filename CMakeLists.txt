@@ -33,16 +33,16 @@ install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME}_targets)
 
 # Generate and install *-targets.cmake 
 install(EXPORT ${PROJECT_NAME}_targets
-  FILE ${PROJECT_NAME}-targets.cmake
+  FILE ${PROJECT_NAME}Targets.cmake
   DESTINATION share/${PROJECT_NAME}
 )
 
 # Generate the config file in the current binary dir (this ensures it's not placed directly in source)
-file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}-config.cmake"
-  "include(\"\${CMAKE_CURRENT_LIST_DIR}/${PROJECT_NAME}-targets.cmake\")\n"
+file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Сonfig.cmake"
+  "include(\"\${CMAKE_CURRENT_LIST_DIR}/${PROJECT_NAME}Targets.cmake\")\n"
 )
 
 # Install the generated config file
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}-config.cmake"
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Сonfig.cmake"
   DESTINATION share/${PROJECT_NAME}
 )
