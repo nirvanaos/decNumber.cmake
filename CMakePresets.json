@@ -7,8 +7,7 @@
   "configurePresets": [
     {
       "name": "base",
-      "hidden": true,
-      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      "hidden": true
     },
     {
       "inherits": "base",
